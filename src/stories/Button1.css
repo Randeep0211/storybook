@@ -1,0 +1,25 @@
+.storybook-button{
+  border: none;
+  color: white;
+  padding: 15px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-flex;
+  font-size: 16px;
+  border-radius: 1px;
+  cursor: pointer;
+}
+
+.squareButton{
+  color: white;
+  background-color: crimson;
+}
+
+.roundButton{
+  /* color: white; */
+  border-radius: 30px;
+}
+
+.signup{
+  border-radius: 1px;
+}
