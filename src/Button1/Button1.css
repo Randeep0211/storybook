@@ -1,4 +1,4 @@
-.storybook-button{
+.storybook-button {
   border: none;
   color: white;
   padding: 15px 30px;
@@ -10,16 +10,21 @@
   cursor: pointer;
 }
 
-.squareButton{
+.squareButton {
   color: white;
   background-color: crimson;
 }
 
-.roundButton{
+.roundButton {
   /* color: white; */
   border-radius: 30px;
 }
 
-.signup{
-  border-radius: 1px;
+.story-button--large {
+ padding: 90;
+}
+
+.load {
+  color: blue;
+  cursor: wait;
 }
