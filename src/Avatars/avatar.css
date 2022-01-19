@@ -1,3 +1,18 @@
 .avatar{
   color: orangered;
 }
+
+.storybook-avatar_small{
+  width: 10px;
+  height: 10px;
+}
+
+.storybook-avatar_large{
+  width: 30px;
+  height: 30px;
+}
+
+.storybook-avatar_medium{
+  width: 20px;
+  height: 20px;
+}

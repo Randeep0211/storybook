@@ -8,12 +8,14 @@ interface iconProps {
   primary: boolean;
   size: 'small' | 'large' | 'medium';
   label: string;
+  text: string;
   onClick?: () => {};
 }
 
 export const Icons = ({
   primary = false,
   size = 'small',
+  text,
   label,
 }: iconProps) => {
   return (
@@ -23,7 +25,7 @@ export const Icons = ({
         width="16"
         height="16"
         fill="currentColor"
-        className={classNames(['icon', label === 'set' && 'set'])}
+        className={classNames(['icon', text === 'hover' && 'set', size==='small' && 'storybook-icon--small'])}
         viewBox="0 0 16 16"
       >
         <path d="M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 0 0-6.492zM5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 0 1-4.492 0z" />

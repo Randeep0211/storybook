@@ -16,14 +16,14 @@ const Template: ComponentStory<typeof Avatar> = (args) => <Avatar {...args} />;
 export const assignment = Template.bind({});
 assignment.args = {
   primary: true,
-  label: 'H',
+  text: 'H',
   backgroundColor: 'green',
 };
 
 export const pageView = Template.bind({});
 pageView.args = {
-  size: 'large',
-  label: 'PV',
+  size: 'small',
+  text: 'PV',
   backgroundColor: 'orangered',
 };
 
@@ -31,6 +31,6 @@ export const mail = Template.bind({});
 mail.args = {
   // primary: true,
   size: 'large',
-  label: 'Mail',
+  text: 'Mail',
   backgroundColor: 'blue',
 };

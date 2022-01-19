@@ -22,7 +22,8 @@ gearIcon.args = {
 export const hoverIcon = Template.bind({});
 hoverIcon.args = {
   size: 'small',
-  label: 'set',
+  // label: 'set',
+  text:'hover'
 };
 
 // export constprofileIcon = Template.bind({});
