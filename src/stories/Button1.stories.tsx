@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 
-
 import Button1 from '../Button1/Button1';
+import { purple } from '@mui/material/colors';
 
 export default {
   title: 'Example/Button1',
@@ -20,31 +20,63 @@ export const squareButton = Template.bind({});
 squareButton.args = {
   primary: true,
   label: 'button',
+  size: 'medium',
 };
 
-export const roundButton = Template.bind({});
-roundButton.args = {
-  size: 'small',
-  label: 'round',
-  backgroundColor: 'black',
-};
-
-export const Signup = Template.bind({});
-Signup.args = {
+export const buttonWithIcon = Template.bind({});
+buttonWithIcon.args = {
   size: 'large',
-  label: 'signup',
-  backgroundColor: 'green',
+  label: 'Button',
+  backgroundColor: 'orangered',
+  color: 'white',
+  icon: 'search',
 };
 
-export const Loading = Template.bind({});
-Loading.args = {
-  size: 'small',
-  label: 'load',
-  backgroundColor:'yellow'
-}
+export const round = Template.bind({});
+round.args = {
+  size: 'large',
+  label: 'Button',
+  backgroundColor: 'aqua',
+  color: 'black',
+  text: 'round',
+};
 
-export const settingButton = Template.bind({});
-settingButton.args = {
-  size:'small',
-  label:'Button'
-}
+export const outlineButton = Template.bind({});
+outlineButton.args = {
+  size: 'large',
+  label: 'Success',
+  text: 'outline',
+};
+
+export const blockButton = Template.bind({});
+blockButton.args = {
+  size: 'large',
+  label: 'Block Button',
+  text: 'block',
+};
+
+export const iconButton = Template.bind({});
+iconButton.args = {
+  size: 'large',
+  // label:'',
+  icon: 'delete',
+  backgroundColor: 'orangered',
+  color: 'white',
+};
+
+export const socialButton = Template.bind({});
+socialButton.args = {
+  size: 'large',
+  icon: 'social',
+  backgroundColor: 'darkblue',
+  color: 'white',
+};
+
+export const lightButton = Template.bind({});
+lightButton.args = {
+  size: 'large',
+  label: 'info',
+  backgroundColor: 'skyblue',
+  color: 'green',
+  text: 'light',
+};
