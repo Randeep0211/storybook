@@ -40,6 +40,8 @@ export const Avatars = ({
         </Avatar>
        
       </Stack> 
+
+      
       </div>
     
   );
