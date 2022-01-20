@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 
 import Button1 from '../Button1/Button1';
-import { purple } from '@mui/material/colors';
 
 export default {
   title: 'Example/Button1',

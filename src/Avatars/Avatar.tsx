@@ -38,7 +38,8 @@ export const Avatars = ({
           {text === 'PV' && <PageviewIcon />}
           {text === 'Mail' && <MailIcon />}
         </Avatar>
-      </Stack>
+       
+      </Stack> 
       </div>
     
   );

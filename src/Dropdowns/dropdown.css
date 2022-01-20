@@ -1,0 +1,36 @@
+.toggle_btn{
+  padding: 15px 30px;
+  color: white;
+  background-color: green;
+}
+
+.btn_small{
+  padding: 10px 20px;
+}
+
+.btn_large{
+  padding: 20px 40px;
+}
+
+
+
+.content{
+  display: block;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.content a:hover {
+  background-color: #b91717
+}
+

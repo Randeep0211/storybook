@@ -4,7 +4,7 @@ import classNames from 'classnames';
 import { MdSearch , MdDelete , MdFacebook } from 'react-icons/md';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 
-interface btnProps {
+interface BtnProps {
   primary: boolean;
   backgroundColor: string;
   size: 'medium' | 'small' | 'large';
@@ -37,7 +37,7 @@ export const Button1 = ({
   icon,
   text,
   ...props
-}: btnProps) => {
+}: BtnProps) => {
   return (
     <div>
       <button
