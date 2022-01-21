@@ -1,0 +1,15 @@
+.container {
+  list: none;
+  border: '1px solid black';
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.page-link {
+  color: red !important;
+}
+
+.page-item{
+  background-color: green !important;
+}

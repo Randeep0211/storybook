@@ -11,17 +11,12 @@ export default {
   },
 } as ComponentMeta<typeof Image>;
 
-const Template: ComponentStory<typeof Image> = (args) => (
-  <Image {...args} />
-);
+const Template: ComponentStory<typeof Image> = (args) => <Image {...args} />;
 
-
-export const simple = Template.bind({});
-simple.args = {
-  primary:true,
-  size: 'small' ,
-  src:'https://i.pravatar.cc/300',
+export const round = Template.bind({});
+round.args = {
+  primary: true,
+  size: 'small',
+  src: 'https://i.pravatar.cc/300',
   alt: 'Bob Marley',
-  
-
-}
+};

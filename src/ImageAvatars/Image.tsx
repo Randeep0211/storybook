@@ -22,7 +22,7 @@ export const Image = ({
 }: imgProps) => {
   return (
     <div>
-      <Avatar className={clsx()}  alt={alt} src={src}></Avatar>
+      <Avatar sx={{width:100 , height:100}}  alt={alt} src={src}></Avatar>
     </div>
   );
 };
