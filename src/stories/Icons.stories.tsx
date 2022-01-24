@@ -22,12 +22,13 @@ gearIcon.args = {
 export const hoverIcon = Template.bind({});
 hoverIcon.args = {
   size: 'small',
-  // label: 'set',
+  label: 'set',
   text:'hover'
 };
 
-// export constprofileIcon = Template.bind({});
-// profileIcon.args = {
-//   size: 'small',
-//   label : 'profile'
-// }
+export const profileIcon = Template.bind({});
+profileIcon.args = {
+  size: 'small',
+  label : 'profile',
+  text : 'profile'
+}

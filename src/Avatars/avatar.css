@@ -1,18 +1,19 @@
-.avatar{
+.avatar {
   color: orangered;
 }
 
-.storybook-avatar_small{
-  width: 10px;
-  height: 10px;
+.css-2s90m6-MuiAvatar-root_large {
+  width: 80px !important;
+  height: 80px !important;
+}
+.css-2s90m6-MuiAvatar-root_small {
+  width: 50px !important;
+  height: 50px !important;
 }
 
-.storybook-avatar_large{
-  width: 30px;
-  height: 30px;
+.css-2s90m6-MuiAvatar-root_medium {
+  width: 60px !important;
+  height: 60px !important;
 }
 
-.storybook-avatar_medium{
-  width: 20px;
-  height: 20px;
-}
+

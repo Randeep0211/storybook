@@ -10,10 +10,7 @@ interface dropBtnProps {
   size: 'medium' | 'small' | 'large';
   label: string;
   color: string;
-  text1: string;
-  text2: string;
-  text3: string;
-  text4: string;
+  text: string[];
   border: string;
   opacity: string;
   borderRadius: string;
@@ -26,10 +23,7 @@ export const Drpdown = ({
   color,
   border,
   label,
-  text1,
-  text2,
-  text3,
-  text4,
+  text,
   opacity,
   borderRadius,
 
@@ -50,11 +44,9 @@ export const Drpdown = ({
         </Dropdown.Toggle>
 
         <Dropdown.Menu className="content">
-          <Dropdown.Item>{text1}</Dropdown.Item>
-          <Dropdown.Item>{text2}</Dropdown.Item>
-          <Dropdown.Item>{text3}</Dropdown.Item>
-          <hr></hr>
-          <Dropdown.Item>{text4}</Dropdown.Item>
+          {text.map((data) => {
+            return <Dropdown.Item>{data}</Dropdown.Item>;
+          })}
         </Dropdown.Menu>
       </Dropdown>
     </div>

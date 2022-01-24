@@ -18,7 +18,7 @@ const Template: ComponentStory<typeof Button1> = (args) => (
 
 export const squareButton = Template.bind({});
 squareButton.args = {
-  primary: true,
+  
   label: 'button',
   size: 'medium',
 };

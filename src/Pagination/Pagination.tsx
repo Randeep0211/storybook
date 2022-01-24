@@ -4,32 +4,39 @@ import Pagination from 'react-bootstrap/Pagination';
 import './pagination.css';
 
 interface PagiProps {
-  primary: boolean;
   size: 'medium' | 'small' | 'large';
   color: string;
   width: string;
   padding: string;
   backgroundColor?: string;
+  text: number[];
+  page: number;
+  totalPage: number
 }
 
 export const Pagin = ({
-  primary = false,
   size = 'medium',
   color,
   width,
   padding,
+  text,
   backgroundColor,
+  page,
+  totalPage,
 }: PagiProps) => {
   return (
     <div>
       <div style={{ display: 'block', borderRadius: 10 }}>
         <Pagination style={{ width, padding }}>
-          <Pagination.Prev />
-          <Pagination.Item>{1}</Pagination.Item>
-          <Pagination.Item>{2}</Pagination.Item>
-          <Pagination.Item>{3}</Pagination.Item>
-          <Pagination.Ellipsis />
-          <Pagination.Next />
+
+          {text.map((data: number) => {
+            return (
+              <>
+                <Pagination.Item>{data}</Pagination.Item>
+              </>
+            );
+          })}
+          <span>Next</span>
         </Pagination>
       </div>
     </div>

@@ -15,7 +15,6 @@ const Template: ComponentStory<typeof Avatar> = (args) => <Avatar {...args} />;
 
 export const assignment = Template.bind({});
 assignment.args = {
-  primary: true,
   text: 'H',
   backgroundColor: 'green',
 };

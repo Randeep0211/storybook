@@ -16,25 +16,21 @@ const Template: ComponentStory<typeof Drpdown> = (args) => (
   <Drpdown {...args} />
 );
 
+const Text = ['Action','Another Action','Something Else','Important Links'];
+
 export const simpleButton = Template.bind({});
 simpleButton.args = {
   primary: true,
   label: 'Action',
   size: 'medium',
-  text1: 'Action',
-  text2: 'Another Action',
-  text3: 'Something Else',
-  text4: 'Links',
+  text : Text
 };
 
 export const outlineButton = Template.bind({});
 outlineButton.args = {
   label: 'Action',
   size: 'medium',
-  text1: 'Action',
-  text2: 'Another Action',
-  text3: 'Something Else',
-  text4: 'Links',
+  text: Text,
   backgroundColor: 'white',
   color: 'blue',
   border: '1px solid green',
@@ -44,10 +40,7 @@ export const lightButton = Template.bind({});
 lightButton.args = {
   label: 'Action',
   size: 'medium',
-  text1: 'Action',
-  text2: 'Another Action',
-  text3: 'Something Else',
-  text4: 'Links',
+  text: Text,
   backgroundColor: 'skyblue',
   color: 'black',
   border: '1px solid green',
@@ -58,10 +51,7 @@ export const roundButton = Template.bind({});
 roundButton.args = {
   label: 'Action',
   size: 'medium',
-  text1: 'Action',
-  text2: 'Another Action',
-  text3: 'Something Else',
-  text4: 'Links',
+  text:Text,
   backgroundColor: 'orangered',
   color: 'green',
   borderRadius: '20px',

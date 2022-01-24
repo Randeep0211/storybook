@@ -7,10 +7,9 @@ import AssignmentIcon from '@mui/icons-material/Assignment';
 import PageviewIcon from '@mui/icons-material/Pageview';
 import MailIcon from '@mui/icons-material/Mail';
 import { green, pink } from '@mui/material/colors';
-// import { ClassNames } from '@emotion/react';
+import { ClassNames } from '@emotion/react';
 
 interface avatarProps {
-  primary: boolean;
   size: 'small' | 'large' | 'medium';
   label: string;
   backgroundColor: string;
@@ -19,7 +18,6 @@ interface avatarProps {
 }
 
 export const Avatars = ({
-  primary = false,
   size = 'medium',
   backgroundColor,
   label,
@@ -28,22 +26,22 @@ export const Avatars = ({
   return (
     <div>
       <Stack>
-        <Avatar className={classNames([
-            size === 'small' && 'storybook-avatar_small',
-            size === 'large' && 'storybook-avatar_large',
-            size === 'medium' && 'storybook-avatar_medium',
+        <Avatar
+          className={classNames([
+            size === 'small' && 'css-2s90m6-MuiAvatar-root_small',
+            size === 'large' && 'css-2s90m6-MuiAvatar-root_large',
+            size === 'medium' && 'css-2s90m6-MuiAvatar-root_medium',
+            size === 'small' && 'css-i4bv87-MuiSvgIcon-root_small',
+           
           ])}
-          style={{ backgroundColor }}>
+          style={{ backgroundColor }}
+        >
           {text === 'H' && <AssignmentIcon />}
           {text === 'PV' && <PageviewIcon />}
           {text === 'Mail' && <MailIcon />}
         </Avatar>
-       
-      </Stack> 
-
-      
-      </div>
-    
+      </Stack>
+    </div>
   );
 };
 export default Avatars;

@@ -1,11 +1,10 @@
 import React from 'react';
 import './Button1.css';
 import classNames from 'classnames';
-import { MdSearch , MdDelete , MdFacebook } from 'react-icons/md';
+import { MdSearch, MdDelete, MdFacebook } from 'react-icons/md';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 
 interface BtnProps {
-  primary: boolean;
   backgroundColor: string;
   size: 'medium' | 'small' | 'large';
   label: string;
@@ -29,13 +28,13 @@ const svg = (
 );
 
 export const Button1 = ({
-  primary = false,
   size = 'medium',
   backgroundColor,
   color,
   label,
   icon,
   text,
+
   ...props
 }: BtnProps) => {
   return (
@@ -49,14 +48,14 @@ export const Button1 = ({
           size === 'medium' && 'button_medium',
           text === 'round' && 'button_round',
           text === 'outline' && 'button_outline',
-          text === 'block'   && 'button_block',
+          text === 'block' && 'button_block',
           text === 'icon' && 'button_icon',
-          text === 'light' && 'button_light'
+          text === 'light' && 'button_light',
         ])}
-        style={{ backgroundColor, color }}
+        style={{ backgroundColor, color  }}
       >
-        {icon==='search' && <MdSearch />}
-        {icon==='delete' && <MdDelete />}
+        {icon === 'search' && <MdSearch style={{ marginTop: 4 }} />}
+        {icon === 'delete' && <MdDelete />}
         {icon === 'social' && <MdFacebook />}
         {label}
       </button>

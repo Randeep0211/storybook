@@ -1,8 +1,7 @@
 import React from 'react';
 import Avatar from '@mui/material/Avatar';
+import './Image.css';
 import classNames from 'classnames';
-import './Image.css'
-import clsx from  'clsx';
 
 interface imgProps {
   primary: boolean;
@@ -11,7 +10,6 @@ interface imgProps {
   src: string;
   alt: string;
 }
-
 
 export const Image = ({
   primary = true,
@@ -22,7 +20,15 @@ export const Image = ({
 }: imgProps) => {
   return (
     <div>
-      <Avatar sx={{width:100 , height:100}}  alt={alt} src={src}></Avatar>
+      <Avatar
+        className={classNames([
+          size === 'large' && 'css-1wlk0hk-MuiAvatar-root',
+          size === 'small' && 'css-1wlk0hk-MuiAvatar-root_small',
+          size === 'medium' && 'css-1wlk0hk-MuiAvatar-root_medium'
+        ])}
+        alt={alt}
+        src={src}
+      ></Avatar>
     </div>
   );
 };

@@ -34,6 +34,7 @@
 .button_outline{
   border: 2px solid orange;
   background-color: white;
+  border-radius: 10px;
 }
 
 .button_outline:hover{
@@ -58,3 +59,5 @@
 .button_light:hover{
   background-color: coral;
 }
+
+
