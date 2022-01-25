@@ -1,35 +1,20 @@
 import React, { Component } from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 
-import Avatar from '../Avatars/Avatar';
+import AvatarComponent from '../Avatars/avatar';
 
 export default {
   title: 'Example/Avatars',
-  component: Avatar,
+  component: AvatarComponent,
   argTypes: {
     backgroundColor: { color: 'control' },
   },
-} as ComponentMeta<typeof Avatar>;
+} as ComponentMeta<typeof AvatarComponent>;
 
-const Template: ComponentStory<typeof Avatar> = (args) => <Avatar {...args} />;
+const Template: ComponentStory<typeof AvatarComponent> = (args) => <AvatarComponent {...args} />;
 
-export const assignment = Template.bind({});
-assignment.args = {
-  text: 'H',
-  backgroundColor: 'green',
+export const squareAvatar = Template.bind({});
+squareAvatar.args = {
+  avatar: 'https://i.pravatar.cc/300',
 };
 
-export const pageView = Template.bind({});
-pageView.args = {
-  size: 'small',
-  text: 'PV',
-  backgroundColor: 'orangered',
-};
-
-export const mail = Template.bind({});
-mail.args = {
-  // primary: true,
-  size: 'large',
-  text: 'Mail',
-  backgroundColor: 'blue',
-};

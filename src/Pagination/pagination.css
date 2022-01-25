@@ -1,15 +1,17 @@
-.container {
-  list: none;
-  border: '1px solid black';
-  display: flex;
-  flex-direction: row;
-  gap: 10px;
+.pagination {
+  display: inline-block;
 }
 
-.page-link {
-  color: red !important;
+.pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+  border: 1px solid #ddd;
 }
 
-.page-item{
-  background-color: green !important;
+.pagination a:hover {
+  background-color: #4caf50;
+  color: white;
 }

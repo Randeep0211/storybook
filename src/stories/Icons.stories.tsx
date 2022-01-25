@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 
-import Icons from '../Icons/Icons';
+import Icons from '../Icons/icons';
 
 export default {
   title: 'Example/Icons',
@@ -15,20 +15,13 @@ const Template: ComponentStory<typeof Icons> = (args) => <Icons {...args} />;
 
 export const gearIcon = Template.bind({});
 gearIcon.args = {
-  primary: true,
-  label: 'icon',
+  size: 'small'
+  
 };
 
 export const hoverIcon = Template.bind({});
 hoverIcon.args = {
   size: 'small',
-  label: 'set',
-  text:'hover'
+  effect:'hover'
 };
 
-export const profileIcon = Template.bind({});
-profileIcon.args = {
-  size: 'small',
-  label : 'profile',
-  text : 'profile'
-}

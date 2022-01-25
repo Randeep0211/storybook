@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 
-import Button1 from '../Button1/Button1';
-import { purple } from '@mui/material/colors';
+import Button1 from '../Button1/button1';
+
 
 export default {
   title: 'Example/Button1',
@@ -29,7 +29,8 @@ buttonWithIcon.args = {
   label: 'Button',
   backgroundColor: 'orangered',
   color: 'white',
-  icon: 'search',
+  iconName: 'search',
+  marginTop: 4
 };
 
 export const round = Template.bind({});
@@ -38,28 +39,27 @@ round.args = {
   label: 'Button',
   backgroundColor: 'aqua',
   color: 'black',
-  text: 'round',
+  name: 'round',
 };
 
 export const outlineButton = Template.bind({});
 outlineButton.args = {
   size: 'large',
   label: 'Success',
-  text: 'outline',
+  name: 'outline',
 };
 
 export const blockButton = Template.bind({});
 blockButton.args = {
   size: 'large',
   label: 'Block Button',
-  text: 'block',
+  name: 'block',
 };
 
 export const iconButton = Template.bind({});
 iconButton.args = {
   size: 'large',
-  // label:'',
-  icon: 'delete',
+  iconName: 'delete',
   backgroundColor: 'orangered',
   color: 'white',
 };
@@ -67,7 +67,7 @@ iconButton.args = {
 export const socialButton = Template.bind({});
 socialButton.args = {
   size: 'large',
-  icon: 'social',
+  iconName: 'social',
   backgroundColor: 'darkblue',
   color: 'white',
 };
@@ -78,5 +78,5 @@ lightButton.args = {
   label: 'info',
   backgroundColor: 'skyblue',
   color: 'green',
-  text: 'light',
+  name: 'light',
 };

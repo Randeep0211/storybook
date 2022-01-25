@@ -1,25 +1,23 @@
-.toggle_btn{
+.toggle_button {
   padding: 15px 30px;
   color: white;
   background-color: green;
 }
 
-.btn_small{
+.button_small {
   padding: 10px 20px;
 }
 
-.btn_large{
+.button_large {
   padding: 20px 40px;
 }
 
-
-
-.content{
+.content {
   display: block;
   position: absolute;
   background-color: #f9f9f9;
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
 
@@ -31,6 +29,22 @@
 }
 
 .content a:hover {
-  background-color: #b91717
+  background-color: #b91717;
 }
 
+.button_outline {
+  background-color: skyblue;
+  border: 2px solid orange;
+}
+
+.button_round {
+  background-color: skyblue;
+  border: 2px solid transparent;
+  border-radius: 20px;
+}
+
+.button_light {
+  background-color: aqua;
+  opacity: 0.2;
+  color: black;
+}

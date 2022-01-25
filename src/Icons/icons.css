@@ -1,19 +1,33 @@
-.icon{
+.icon {
   border: 1px solid transparent;
-  padding : 15px 30px;
+  padding: 15px 30px;
   display: inline-flex;
   cursor: pointer;
   font-size: 40px;
-  color:black;
+  color: black;
 }
 
-.set{
+.icon_change {
   color: black;
   font-size: 50px;
 }
 
-.set:hover{
-  width:150px;
+.icon_change:hover {
+  width: 150px;
   height: 150px;
 }
 
+.icon_small {
+  width: 30px;
+  height: 30px;
+}
+
+.icon_medium {
+  width: 40px;
+  height: 40px;
+}
+
+.icon_large {
+  width: 60px;
+  height: 60px;
+}
