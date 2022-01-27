@@ -1,5 +1,5 @@
 import React from 'react';
-import './avatar.css';
+import styles from './avatar.module.css';
 import classNames from 'classnames';
 
 interface AvatarProps {
@@ -7,19 +7,17 @@ interface AvatarProps {
   avatar: string;
 }
 
-export const AvatarComponent = ({ size = 'medium', avatar }: AvatarProps) => {
+export const Avatar: React.FC<AvatarProps> = ({ size = 'medium', avatar }) => {
   return (
-    <div>
-      <img
-        src={avatar}
-        className={classNames([
-          size === 'small' && 'small',
-          size === 'medium' && 'medium',
-          size === 'large' && 'large',
-        ])}
-        alt="image"
-      />
-    </div>
+    <img
+      src={avatar}
+      className={classNames([
+        size === 'small' && styles.small,
+        size === 'medium' && styles.medium,
+        size === 'large' && styles.large,
+      ])}
+      alt="image"
+    />
   );
 };
-export default AvatarComponent;
+export default Avatar;

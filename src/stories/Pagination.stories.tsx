@@ -1,23 +1,33 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 
-import PaginationComponent from '../Pagination/pagination';
+import Pagination from '../Pagination/pagination';
 
 export default {
   title: 'Example/Pagination',
-  component: PaginationComponent,
+  component: Pagination,
   argTypes: {
     backgroundColor: { color: 'control' },
   },
-} as ComponentMeta<typeof PaginationComponent>;
+} as ComponentMeta<typeof Pagination>;
 
-const num = [1, 2, 3, 4, 5, 6, 7];
-
-const Template: ComponentStory<typeof PaginationComponent> = (args) => (
-  <PaginationComponent {...args} />
-);
+const Template: ComponentStory<typeof Pagination> = (args) => {
+  const [currentPage, setCurrentPage] = useState(1);
+  return (
+    <Pagination
+      {...args}
+      onPageChange={setCurrentPage}
+      currentPage={currentPage}
+    />
+  );
+};
 
 export const basic = Template.bind({});
 basic.args = {
-  list: num,
+  currentPage: 2,
+  next: 'next',
+  onPageChange: () => {},
+  perPageRecord: 20,
+  preview: 'prev',
+  totalRecord: 100,
 };

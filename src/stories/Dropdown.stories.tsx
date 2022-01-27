@@ -1,18 +1,16 @@
 import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 
-import DropdownComponent from '../Dropdowns/dropdown';
+import Dropdown from '../Dropdowns/dropdown';
 
 export default {
   title: 'Example/Dropdown',
-  component: DropdownComponent,
-  argTypes: {
-    backgroundColor: { color: 'control' },
-  },
-} as ComponentMeta<typeof DropdownComponent>;
+  component: Dropdown,
+  argTypes: {},
+} as ComponentMeta<typeof Dropdown>;
 
-const Template: ComponentStory<typeof DropdownComponent> = (args) => (
-  <DropdownComponent {...args} />
+const Template: ComponentStory<typeof Dropdown> = (args) => (
+  <Dropdown {...args} />
 );
 
 const List = ['Action', 'Another Action', 'Something Else', 'Important Links'];
@@ -20,26 +18,26 @@ const List = ['Action', 'Another Action', 'Something Else', 'Important Links'];
 export const simpleButton = Template.bind({});
 simpleButton.args = {
   size: 'medium',
-  list: List,
+  menus: List,
 };
 
 export const outlineButton = Template.bind({});
 outlineButton.args = {
   size: 'medium',
-  list: List,
-  name: 'outline',
+  menus: List,
+  variant: 'outline',
 };
 
 export const lightButton = Template.bind({});
 lightButton.args = {
   size: 'medium',
-  list: List,
-  name: 'light',
+  menus: List,
+  variant: 'light',
 };
 
 export const roundButton = Template.bind({});
 roundButton.args = {
   size: 'medium',
-  list: List,
-  name: 'round',
+  menus: List,
+  variant: 'round',
 };

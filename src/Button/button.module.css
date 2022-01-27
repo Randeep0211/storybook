@@ -1,0 +1,45 @@
+.button {
+  border: none;
+  color: gray;
+  text-align: center;
+  text-decoration: none;
+  display: inline-flex;
+  font-size: 16px;
+  border-radius: 1px;
+  cursor: pointer;
+  opacity: 1.5;
+}
+
+.buttonSmall {
+  padding: 10px 10px;
+}
+
+.buttonLarge {
+  padding: 15px 30px;
+}
+
+.buttonMedium {
+  padding: 15px 20px;
+}
+
+.buttonRound {
+  border-radius: 20px;
+}
+
+.buttonOutline {
+  border: 2px solid orange;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.buttonOutline:hover {
+  background-color: pink;
+}
+
+.primary {
+  background-color: green;
+}
+
+.secondary {
+  background-color: violet;
+}

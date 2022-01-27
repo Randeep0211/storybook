@@ -1,14 +1,14 @@
-.toggle_button {
+.button {
   padding: 15px 30px;
   color: white;
   background-color: green;
 }
 
-.button_small {
+.buttonSmall {
   padding: 10px 20px;
 }
 
-.button_large {
+.buttonLarge {
   padding: 20px 40px;
 }
 
@@ -32,19 +32,27 @@
   background-color: #b91717;
 }
 
-.button_outline {
+.buttonOutline {
   background-color: skyblue;
   border: 2px solid orange;
 }
 
-.button_round {
+.buttonRound {
   background-color: skyblue;
   border: 2px solid transparent;
   border-radius: 20px;
 }
 
-.button_light {
+.buttonLight {
   background-color: aqua;
   opacity: 0.2;
   color: black;
+}
+
+.primary {
+  background-color: green;
+}
+
+.secondary {
+  background-color: violet;
 }

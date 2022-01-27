@@ -1,36 +1,42 @@
 import React from 'react';
-import './dropdown.css';
+import styles from './dropdown.module.css';
 import classNames from 'classnames';
 
 interface DropdownProps {
   size: 'medium' | 'small' | 'large';
-  list: string[];
-  name: 'simple' | 'outline' | 'light' | 'round';
+  menus: string[];
+  variant: 'simple' | 'outline' | 'light' | 'round';
+  color: 'primary' | 'secondary';
 }
 
-export const DropdownComponent = ({
+export const Dropdown: React.FC<DropdownProps> = ({
   size = 'medium',
-  list,
-  name,
-}: DropdownProps) => {
+  menus,
+  variant,
+  color,
+}) => {
   return (
-    <div>
-      <select
-        className={classNames([
-          'toggle_button',
-          size === 'small' && 'button_small',
-          size === 'large' && 'button_large',
-          name === 'outline' && 'button_outline',
-          name === 'round' && 'button_round',
-          name === 'light' && 'button_light',
-        ])}
-      >
-        {list.map((data) => {
-          return <option value={data}>{data}</option>;
-        })}
-      </select>
-    </div>
+    <select
+      className={classNames([
+        styles.button,
+        size === 'small' && styles.buttonSmall,
+        size === 'large' && styles.buttonLarge,
+        variant === 'outline' && styles.buttonOutline,
+        variant === 'round' && styles.buttonRound,
+        variant === 'light' && styles.buttonLight,
+        color === 'primary' && styles.primary,
+        color === 'secondary' && styles.secondary,
+      ])}
+    >
+      {menus.map((el) => {
+        return (
+          <option value={el} key={el}>
+            {el}
+          </option>
+        );
+      })}
+    </select>
   );
 };
 
-export default DropdownComponent;
+export default Dropdown;

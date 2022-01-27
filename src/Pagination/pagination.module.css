@@ -1,0 +1,42 @@
+.pagination {
+  display: flex;
+}
+
+.pagination {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+  border: 1px solid rgb(168, 61, 61);
+}
+
+.pagesButton {
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+}
+.pagesButton:hover {
+  background-color: yellowgreen;
+}
+
+.pagination:hover {
+  color: white;
+}
+
+.buttonPreview {
+  background-color: aqua;
+  color: green;
+  border: none;
+}
+
+.buttonNext {
+  background-color: aqua;
+  color: green;
+  border: none;
+}
+
+.currentPage {
+  color: blue;
+  background-color: greenyellow;
+}
